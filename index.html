@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body onload="initializeDashboard()">
+    <div class="container">
+        <header>
+            <p class="welcome-text">Welcome, Elite!</p>
+        </header>
 
+        <!-- Login Reward Popup -->
+        <div id="login-reward-popup" class="popup-card">
+            <p>Claim your login reward!</p>
+            <button onclick="claimLoginReward()">Claim +3000 Points</button>
+        </div>
+
+        <!-- Points Balance Section -->
+        <section class="section-card">
+            <div class="balance-display">
+                <p>Elite Points Balance</p>
+                <span id="points-balance" class="points">0</span>
+            </div>
+            <!-- Immediate Update on Button Click -->
+        </section>
+
+        <!-- Share App Link Section (below Points Balance) -->
+        <section class="section-card share-link">
+            <h2>Invite more Elites!</h2>
+            <p>Invite friends to join and earn more points!</p>
+            <input type="text" id="app-link" value="https://app.link" readonly>
+            <button onclick="copyAppLink()">Copy Link</button>
+        </section>
+
+        <!-- Top Ranked Users Section -->
+        <section class="section-card top-ranked">
+            <h2>RANKING</h2>
+            <ul id="top-users">
+                <li>terry566 - <span class="user-points">38,579,560 points</span></li>
+                <li>markxterra - <span class="user-points">34,579,570 points</span></li>
+                <li>portoguese - <span class="user-points">29,985,560 points</span></li>
+                <li>elenadam558 - <span class="user-points">23,457,000 points</span></li>
+                <li>martin77889 - <span class="user-points">19,247,600 points</span></li>
+            </ul>
+        </section>
+    </div>
+
+    <footer>
+        <nav>
+            <a href="airdrop.html" class="active">Dashboard</a>
+            <a href="tasks.html">Tasks</a>
+            <a href="claim.html">Claim Airdrop</a>
+        </nav>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+          </html>
