@@ -1,0 +1,191 @@
+/* Reset styling for a clean start */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    max-width: 600px;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+}
+
+.welcome-text {
+    font-size: 1.2em;
+    color: #fff;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.balance-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.balance-display p {
+    font-size: 1.2em;
+    color: #ffffffaa;
+    margin-bottom: 5px;
+}
+
+.points {
+    font-size: 3em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.section-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    margin-bottom: 20px;
+}
+
+/* Styling for the Top Ranked Users section */
+.top-ranked {
+    align-items: flex-start;
+    text-align: left;
+}
+
+.top-ranked h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+#top-users {
+    list-style-type: none;
+    width: 100%;
+}
+
+#top-users li {
+    font-size: 1.1em;
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-points {
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Share Link Section */
+.share-link input {
+    width: 80%;
+    padding: 8px;
+    font-size: 1em;
+    margin: 10px 0;
+    text-align: center;
+    color: #000;
+    background: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #fff;
+    border: none;
+    color: #000;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.2);
+}
+
+button:hover {
+    background-color: #74b9ff;
+}
+
+/* Navigation Styling */
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px 0;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+}
+
+footer nav a {
+    color: #ffffffcc;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 15px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+footer nav a:hover {
+    color: #000;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+footer nav a.active {
+    color: #fff;
+    background: rgba(255, 300, 255, 0.2);
+}
+/* Popup card styling for login reward */
+.popup-card {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    background: rgba(255, 255, 255, 0.9);
+    color: #000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: none; /* Hidden initially */
+    text-align: center;
+    z-index: 1000;
+}
+
+.popup-card button {
+    background-color: #0984e3;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
